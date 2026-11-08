@@ -42,7 +42,7 @@ jobs:
         run: |
           node v3/@claude-flow/cli/benchmarks/context-delegation/run.mjs /tmp/context-delegation-results.json
           node v3/@claude-flow/cli/benchmarks/context-delegation/verify.mjs /tmp/context-delegation-results.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: context-delegation-results
           path: /tmp/context-delegation-results.json
